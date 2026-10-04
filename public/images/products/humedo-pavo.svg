@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Comida húmeda de pavo</title>
+  <desc id="desc">Ilustración de latas de comida húmeda para perros.</desc>
+  <rect width="720" height="720" fill="#fbf7ef"/>
+  <circle cx="360" cy="360" r="260" fill="#f3eadf"/>
+  <g stroke="#4e352b" stroke-width="11">
+    <ellipse cx="292" cy="230" rx="98" ry="32" fill="#fff8ef"/>
+    <path d="M194 230v250c0 18 44 33 98 33s98-15 98-33V230" fill="#f1d5a6"/>
+    <ellipse cx="292" cy="480" rx="98" ry="33" fill="#e6b57e"/>
+    <ellipse cx="430" cy="272" rx="98" ry="32" fill="#fff8ef"/>
+    <path d="M332 272v250c0 18 44 33 98 33s98-15 98-33V272" fill="#d99a94"/>
+    <ellipse cx="430" cy="522" rx="98" ry="33" fill="#bd7f78"/>
+  </g>
+  <text x="292" y="382" text-anchor="middle" font-family="Georgia, serif" font-size="39" fill="#4e352b">Pavo</text>
+  <text x="430" y="424" text-anchor="middle" font-family="Georgia, serif" font-size="39" fill="#fff8ef">Pack</text>
+</svg>

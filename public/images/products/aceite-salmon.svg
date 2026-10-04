@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Aceite de salmón</title>
+  <desc id="desc">Ilustración de una botella de aceite de salmón.</desc>
+  <rect width="720" height="720" fill="#fbf7ef"/>
+  <circle cx="360" cy="360" r="260" fill="#f3eadf"/>
+  <path d="M310 134h100v86H310z" fill="#bd7f78" stroke="#4e352b" stroke-width="12"/>
+  <path d="M280 220h160l34 328c4 37-24 69-61 69H307c-37 0-65-32-61-69l34-328z" fill="#f1d5a6" stroke="#4e352b" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M292 342h136v136H292z" fill="#fff8ef" stroke="#4e352b" stroke-width="9"/>
+  <text x="360" y="393" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#4e352b">Omega</text>
+  <text x="360" y="434" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#bd7f78">SALMON</text>
+</svg>

@@ -1,0 +1,184 @@
+{
+  "businessInfo": {
+    "name": "Anna & Fluffy's Grooming",
+    "shortName": "Anna & Fluffy's",
+    "tagline": "Peluquería canina · Cuidado profesional",
+    "description": "Peluquería canina profesional con atención personalizada, baño, corte y cuidados para tu perro. Reserva tu cita online.",
+    "address": "Dirección pendiente de confirmar",
+    "phone": "+34 000 000 000",
+    "whatsapp": "+34 000 000 000",
+    "email": "hola@annafluffys.example",
+    "instagram": "@annaandfluffys",
+    "areaServed": "Tu ciudad",
+    "logo": "/uploads/1791113366398-77e4fa701e0493dd.jpg"
+  },
+  "services": [
+    {
+      "id": "servicio-1791113195162",
+      "name": "GUARDERIA",
+      "description": "Descripción del servicio.",
+      "durationMinutes": 60,
+      "priceFrom": "Desde 10000€",
+      "active": true
+    },
+    {
+      "id": "bano-secado",
+      "name": "Baño y secado",
+      "description": "Limpieza completa con productos adaptados al tipo de piel y pelo.",
+      "durationMinutes": 60,
+      "priceFrom": "Desde XX €",
+      "active": true
+    },
+    {
+      "id": "corte-arreglo",
+      "name": "Corte y arreglo",
+      "description": "Corte personalizado según raza, estilo y necesidades.",
+      "durationMinutes": 60,
+      "priceFrom": "Desde XX €",
+      "active": true
+    },
+    {
+      "id": "deslanado",
+      "name": "Deslanado",
+      "description": "Eliminación del exceso de pelo y subpelo para mejorar confort y salud.",
+      "durationMinutes": 60,
+      "priceFrom": "Consultar",
+      "active": true
+    },
+    {
+      "id": "higiene-completa",
+      "name": "Higiene completa",
+      "description": "Uñas, oídos, zona higiénica y pequeños detalles de mantenimiento.",
+      "durationMinutes": 60,
+      "priceFrom": "Desde XX €",
+      "active": true
+    },
+    {
+      "id": "cachorros",
+      "name": "Cachorros",
+      "description": "Primeras experiencias positivas para acostumbrarlos progresivamente al grooming.",
+      "durationMinutes": 60,
+      "priceFrom": "Desde XX €",
+      "active": true
+    },
+    {
+      "id": "tratamientos",
+      "name": "Tratamientos especiales",
+      "description": "Cuidados específicos para piel sensible, pelo seco o necesidades concretas.",
+      "durationMinutes": 60,
+      "priceFrom": "Consultar",
+      "active": true
+    }
+  ],
+  "products": [
+    {
+      "id": "producto-1791113053813",
+      "name": "Nuevo producto",
+      "category": "Alimento seco",
+      "description": "Descripción breve del producto.",
+      "price": "XX,XX €",
+      "size": "Formato",
+      "imageUrl": "/uploads/1791113067027-416caae4e28d66e6.png",
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "pienso-pollo-mini",
+      "name": "Pienso natural pollo mini",
+      "category": "Alimento seco",
+      "description": "Receta diaria para perros pequeños con alta palatabilidad.",
+      "price": "XX,XX €",
+      "size": "2 kg",
+      "imageUrl": "/uploads/1791112054964-26dc74a261e835b8.jpg",
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "pienso-salmon-sensitive",
+      "name": "Pienso salmón sensitive",
+      "category": "Piel sensible",
+      "description": "Opción suave para perros con piel delicada o pelo seco.",
+      "price": "XX,XX €",
+      "size": "3 kg",
+      "imageUrl": "/uploads/1791112352237-4d43d5e658559e64.png",
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "humedo-pavo",
+      "name": "Comida húmeda de pavo",
+      "category": "Comida húmeda",
+      "description": "Textura jugosa para complementar la alimentación diaria.",
+      "price": "Consultar",
+      "size": "Pack 6 uds.",
+      "imageUrl": "/images/products/humedo-pavo.svg",
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "snacks-dentales",
+      "name": "Snacks dentales",
+      "category": "Premios",
+      "description": "Premios funcionales para rutina de higiene y recompensa.",
+      "price": "XX,XX €",
+      "size": "150 g",
+      "imageUrl": "/images/products/snacks-dentales.svg",
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "aceite-salmon",
+      "name": "Aceite de salmón",
+      "category": "Suplemento",
+      "description": "Apoyo nutricional para brillo del pelo y cuidado de la piel.",
+      "price": "XX,XX €",
+      "size": "250 ml",
+      "imageUrl": "/images/products/aceite-salmon.svg",
+      "available": false,
+      "featured": false
+    },
+    {
+      "id": "menu-cachorro",
+      "name": "Menú cachorro",
+      "category": "Cachorros",
+      "description": "Alimento completo para primeras etapas de crecimiento.",
+      "price": "XX,XX €",
+      "size": "1,5 kg",
+      "imageUrl": "/images/products/menu-cachorro.svg",
+      "available": true,
+      "featured": false
+    }
+  ],
+  "galleryItems": [
+    {
+      "pet": "Luna",
+      "treatment": "Corte y arreglo",
+      "tone": "rose",
+      "beforeImageUrl": "/uploads/1791112109097-3205c81cb54ae2f7.png"
+    },
+    {
+      "pet": "Milo",
+      "treatment": "Baño, secado y deslanado",
+      "tone": "sage"
+    },
+    {
+      "pet": "Nala",
+      "treatment": "Higiene completa",
+      "tone": "butter"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Cliente de ejemplo",
+      "copy": "Se nota el cariño y la paciencia. Mi perro salió tranquilo, limpio y precioso."
+    },
+    {
+      "name": "Cliente de ejemplo",
+      "copy": "Nos explicaron todo con detalle y adaptaron el corte justo a lo que necesitábamos."
+    },
+    {
+      "name": "Cliente de ejemplo",
+      "copy": "Una experiencia muy cuidada desde la reserva hasta la recogida."
+    }
+  ]
+}

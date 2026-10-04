@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Menú cachorro</title>
+  <desc id="desc">Ilustración de comida para cachorro.</desc>
+  <rect width="720" height="720" fill="#fbf7ef"/>
+  <circle cx="360" cy="360" r="260" fill="#f3eadf"/>
+  <path d="M226 187h268l38 382H188l38-382z" fill="#fff8ef" stroke="#4e352b" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M253 155h214l27 63H226l27-63z" fill="#8b9a88" stroke="#4e352b" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="360" cy="385" r="92" fill="#f7d7c6" stroke="#4e352b" stroke-width="10"/>
+  <circle cx="323" cy="360" r="10" fill="#4e352b"/>
+  <circle cx="397" cy="360" r="10" fill="#4e352b"/>
+  <path d="M338 408c18 18 39 18 44 0" stroke="#4e352b" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <text x="360" y="284" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#bd7f78">CACHORRO</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Pienso de salmón sensitive</title>
+  <desc id="desc">Ilustración de alimento seco para perros con piel sensible.</desc>
+  <rect width="720" height="720" fill="#fbf7ef"/>
+  <circle cx="360" cy="360" r="260" fill="#e7dfd3"/>
+  <path d="M230 165h260l42 415H188l42-415z" fill="#cfd9ca" stroke="#4e352b" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M260 224h200v70H260z" fill="#fff8ef" stroke="#4e352b" stroke-width="9"/>
+  <text x="360" y="271" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#4e352b">SENSITIVE</text>
+  <path d="M244 408c42-65 118-95 211-88 41 3 71 19 91 41-33 48-87 77-160 78-61 1-108-10-142-31z" fill="#d99a94" stroke="#4e352b" stroke-width="10"/>
+  <circle cx="470" cy="376" r="7" fill="#4e352b"/>
+  <path d="M246 407l-38-41v82l38-41z" fill="#d99a94" stroke="#4e352b" stroke-width="10" stroke-linejoin="round"/>
+</svg>
