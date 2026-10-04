@@ -2,7 +2,10 @@ import { createHash, randomBytes, timingSafeEqual } from "node:crypto";
 import type { NextRequest } from "next/server";
 
 const SESSION_TTL_MS = 1000 * 60 * 60 * 8;
+const LOGIN_WINDOW_MS = 1000 * 60 * 15;
+const MAX_LOGIN_ATTEMPTS = 6;
 const sessions = new Map<string, { expiresAt: number }>();
+const loginAttempts = new Map<string, { count: number; resetAt: number }>();
 
 function getPasswordHash(value: string) {
   return createHash("sha256").update(value).digest();
@@ -22,6 +25,47 @@ function cleanupExpiredSessions() {
       sessions.delete(token);
     }
   }
+}
+
+function cleanupLoginAttempts() {
+  const now = Date.now();
+
+  for (const [key, attempt] of loginAttempts.entries()) {
+    if (attempt.resetAt <= now) {
+      loginAttempts.delete(key);
+    }
+  }
+}
+
+export function getClientKey(request: NextRequest) {
+  const forwardedFor = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim();
+  const realIp = request.headers.get("x-real-ip")?.trim();
+
+  return forwardedFor || realIp || "unknown";
+}
+
+export function isLoginRateLimited(key: string) {
+  cleanupLoginAttempts();
+
+  const attempt = loginAttempts.get(key);
+  return Boolean(attempt && attempt.count >= MAX_LOGIN_ATTEMPTS && attempt.resetAt > Date.now());
+}
+
+export function recordFailedLogin(key: string) {
+  cleanupLoginAttempts();
+
+  const current = loginAttempts.get(key);
+
+  if (!current || current.resetAt <= Date.now()) {
+    loginAttempts.set(key, { count: 1, resetAt: Date.now() + LOGIN_WINDOW_MS });
+    return;
+  }
+
+  loginAttempts.set(key, { ...current, count: current.count + 1 });
+}
+
+export function clearFailedLogins(key: string) {
+  loginAttempts.delete(key);
 }
 
 export function createAdminSession(password: string) {

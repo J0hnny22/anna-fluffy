@@ -29,3 +29,5 @@ artifacts
 # runtime uploads are stored locally in development only
 public/uploads/*
 !public/uploads/.gitkeep
+
+.vercel

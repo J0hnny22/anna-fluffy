@@ -3,8 +3,16 @@ import { requireAdminSession } from "@/lib/admin-auth";
 import { getEditableContent, saveEditableContent } from "@/lib/content";
 import type { EditableContent } from "@/types";
 
+export const runtime = "nodejs";
+
+function jsonResponse(body: unknown, init?: ResponseInit) {
+  const response = NextResponse.json(body, init);
+  response.headers.set("Cache-Control", "no-store");
+  return response;
+}
+
 function unauthorized() {
-  return NextResponse.json({ message: "Sesión no válida o caducada." }, { status: 401 });
+  return jsonResponse({ message: "Sesión no válida o caducada." }, { status: 401 });
 }
 
 export async function GET(request: NextRequest) {
@@ -12,7 +20,7 @@ export async function GET(request: NextRequest) {
     return unauthorized();
   }
 
-  return NextResponse.json(await getEditableContent());
+  return jsonResponse(await getEditableContent());
 }
 
 export async function PUT(request: NextRequest) {
@@ -23,8 +31,8 @@ export async function PUT(request: NextRequest) {
   const body = (await request.json().catch(() => null)) as EditableContent | null;
 
   if (!body?.businessInfo || !Array.isArray(body.products) || !Array.isArray(body.services)) {
-    return NextResponse.json({ message: "Contenido no válido." }, { status: 400 });
+    return jsonResponse({ message: "Contenido no válido." }, { status: 400 });
   }
 
-  return NextResponse.json(await saveEditableContent(body));
+  return jsonResponse(await saveEditableContent(body));
 }

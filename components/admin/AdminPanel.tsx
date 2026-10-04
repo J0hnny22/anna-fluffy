@@ -298,7 +298,7 @@ export function AdminPanel() {
         <input
           className="sr-only"
           type="file"
-          accept="image/png,image/jpeg,image/webp,image/svg+xml"
+          accept="image/png,image/jpeg,image/webp"
           disabled={uploadingTarget === targetKey}
           onChange={(event) => {
             const file = event.target.files?.[0];
